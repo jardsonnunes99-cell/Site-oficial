@@ -70,7 +70,7 @@ export function Navbar() {
             <div className="flex items-center gap-3">
               <a
                 href="#encomendas"
-                className="btn-gold text-xs sm:text-sm px-4 py-2.5 sm:px-6 sm:py-3"
+                className="btn-gold hidden sm:inline-flex text-sm px-6 py-3"
                 style={{ borderRadius: "99px" }}
               >
                 Encomendar
