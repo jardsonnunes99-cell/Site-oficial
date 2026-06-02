@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { waLink } from "@/lib/whatsapp";
-import { ArrowRight, ShoppingBag, ChevronDown, Sparkles } from "lucide-react";
+import { ArrowRight, ShoppingBag, ChevronDown, Sparkles, CircleDollarSign } from "lucide-react";
 
 // ⚠️  Substitua pelo ID real do vídeo do YouTube
 const YOUTUBE_VIDEO_ID = "dQw4w9WgXcQ";
@@ -137,13 +137,12 @@ export function Hero() {
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href={waLink("Olá! Quero revender os produtos Diferenciado.")}
-            target="_blank"
-            rel="noreferrer"
-            id="hero-cta-revender"
-            className="btn-outline"
+            href="#mentoria"
+            id="hero-cta-aprender-vender"
+            className="btn-outline group flex items-center gap-2"
           >
-            Quero Revender e Lucrar
+            <CircleDollarSign className="w-4 h-4 text-gold-soft group-hover:text-gold transition-colors" />
+            Aprender a Vender
           </a>
         </motion.div>
 
