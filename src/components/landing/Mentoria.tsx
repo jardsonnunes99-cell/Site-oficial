@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Zap, Users, BookOpen, TrendingUp, Shield, Star } from "lucide-react";
-import { waLink } from "@/lib/whatsapp";
+import { toast } from "sonner";
 
 const topics = [
   { icon: Zap, title: "Vender nas ruas", desc: "Técnica, postura e abordagem para vender em qualquer lugar" },
@@ -30,7 +30,7 @@ export function Mentoria() {
         >
           <p className="section-tag justify-center mb-5">
             <span className="w-4 h-px bg-primary inline-block" />
-            Mentoria Diferenciado
+            Aprender a Vender
             <span className="w-4 h-px bg-primary inline-block" />
           </p>
 
@@ -88,22 +88,21 @@ export function Mentoria() {
           </h3>
 
           <p className="text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-            Entre em contato agora e descubra como a mentoria pode te ajudar a vender com
+            Entre em contato agora e descubra como nosso método pode te ajudar a vender com
             confiança, criar produtos que encantam e construir uma renda escalável.
           </p>
 
-          <a
-            href={waLink(
-              "Olá! Quero saber mais sobre a Mentoria Diferenciado para aprender a vender e lucrar."
-            )}
-            target="_blank"
-            rel="noreferrer"
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              toast.error("Esta área está restrita no momento.");
+            }}
             id="btn-quero-ser-mentorado"
             className="btn-gold group inline-flex"
           >
-            Quero Ser Mentorado
+            Aprender a Vender
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </button>
 
           <div className="neon-line-gold mt-8" />
         </motion.div>

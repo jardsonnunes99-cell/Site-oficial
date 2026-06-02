@@ -8,7 +8,7 @@ const links = [
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Resultados", href: "#resultados" },
   { label: "Encomendas", href: "#encomendas" },
-  { label: "Mentoria", href: "#mentoria" },
+  { label: "Aprender a vender", href: "#mentoria" },
   { label: "Revenda", href: "#revenda" },
 ];
 

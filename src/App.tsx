@@ -10,6 +10,7 @@ import { Reseller } from "@/components/landing/Reseller";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { FloatingWhatsApp } from "@/components/landing/FloatingWhatsApp";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ export default function App() {
       <FAQ />
       <Footer />
       <FloatingWhatsApp />
+      <Toaster />
     </main>
   );
 }
+
