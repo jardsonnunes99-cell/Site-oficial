@@ -54,8 +54,8 @@ export const Products = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="glass-premium border-gold-glow flex flex-col justify-between p-8 rounded-2xl relative transform md:-translate-y-4 shadow-gold z-10"
           >
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-background px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase shadow-gold-sm">
-              Mais Escolhido
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-background px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase shadow-gold-sm text-center whitespace-nowrap">
+              Acesso Completo
             </div>
             <div>
               <div className="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center mb-6 border border-gold/30">
@@ -63,9 +63,28 @@ export const Products = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2">Mentoria</h3>
               <p className="text-xl font-medium text-gold mb-4">"1% Diferenciado"</p>
-              <p className="text-foreground/90 mb-8 leading-relaxed">
-                Mentoria prática para desenvolver comunicação, perder timidez, aumentar vendas e evoluir financeiramente de forma sólida.
-              </p>
+              
+              <ul className="text-foreground/90 mb-6 space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> 10 receitas lucrativas exclusivas
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> 5 estratégias de vendas bônus
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> 1 planilha financeira bônus
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> Acompanhamento direto comigo
+                </li>
+              </ul>
+
+              <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 mb-8">
+                <p className="text-xs text-red-400 font-bold uppercase tracking-wider mb-1">⚠️ Aviso Importante</p>
+                <p className="text-sm text-white/80">
+                  Existem <strong>sérios riscos</strong> de você fazer mais de 1 salário mínimo por mês aplicando este método.
+                </p>
+              </div>
             </div>
             <div>
               <p className="text-4xl font-bold mb-6 text-gradient-gold">R$ 997<span className="text-xl text-gold/70">,00</span></p>
