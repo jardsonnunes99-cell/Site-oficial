@@ -1,10 +1,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { waLink } from "@/lib/whatsapp";
-import { ArrowRight, ShoppingBag, ChevronDown, Sparkles, CircleDollarSign } from "lucide-react";
+import { ArrowRight, ChevronDown, Rocket } from "lucide-react";
 
-// ⚠️  Substitua pelo ID real do vídeo do YouTube
-const YOUTUBE_VIDEO_ID = "dQw4w9WgXcQ";
+// Placeholder video (Business/Urban motion)
+const YOUTUBE_VIDEO_ID = "hVvEISFw9w0"; 
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -20,12 +19,11 @@ export function Hero() {
     <section
       id="top"
       ref={ref}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black"
     >
       {/* ── YouTube Fullscreen Video ── */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
-          {/* Wrapper that keeps 16:9 centered and covers the whole screen */}
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{
@@ -35,10 +33,10 @@ export function Hero() {
           >
             <iframe
               src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`}
-              title="Diferenciado — Vídeo Principal"
+              title="1% Diferenciado — Vídeo Principal"
               allow="autoplay; encrypted-media; picture-in-picture"
               allowFullScreen
-              className="w-full h-full border-0"
+              className="w-full h-full border-0 opacity-60"
               style={{ pointerEvents: "none" }}
             />
           </div>
@@ -46,21 +44,7 @@ export function Hero() {
 
         {/* Elegant dark overlay */}
         <div className="hero-overlay absolute inset-0 z-10" />
-
-        {/* Noise texture overlay for depth */}
-        <div
-          className="absolute inset-0 z-10 opacity-[0.03]"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-            backgroundRepeat: "repeat",
-            backgroundSize: "256px",
-          }}
-        />
       </div>
-
-      {/* Ambient glow orbs */}
-      <div className="absolute top-1/3 -left-40 w-[500px] h-[500px] rounded-full bg-primary/8 blur-[120px] animate-float-slow pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-40 w-[400px] h-[400px] rounded-full bg-primary/6 blur-[100px] animate-float-delay pointer-events-none" />
 
       {/* ── Hero Content ── */}
       <motion.div
@@ -74,9 +58,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="flex justify-center mb-8"
         >
-          <div className="badge-premium">
-            <Sparkles className="w-3 h-3" />
-            Não é apenas brigadeiro. É uma experiência única.
+          <div className="badge-premium border-gold-glow">
+            Enquanto a maioria desiste, o 1% evolui.
           </div>
         </motion.div>
 
@@ -85,16 +68,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.06] mb-8 text-foreground"
+          className="font-display text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.06] mb-8 text-white"
         >
-          Transforme Sua{" "}
-          <span className="text-gradient-gold">Mentalidade</span>
-          {", "}
-          <br className="hidden md:block" />
-          Agrade Seu{" "}
-          <span className="text-gradient-gold">Paladar</span> e Lucre
-          <br className="hidden md:block" /> na{" "}
-          <span className="text-gradient-gold">Revenda</span>
+          Você nasceu para fazer <br className="hidden md:block" />
+          parte do <span className="text-gradient-gold">1% Diferenciado</span>.
         </motion.h1>
 
         {/* Subheadline */}
@@ -102,21 +79,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-3xl mx-auto space-y-3 mb-12"
+          className="max-w-2xl mx-auto mb-12"
         >
-          <p className="text-base sm:text-lg text-foreground/75 leading-relaxed">
-            Aprenda a vender sem medo, perca a timidez e crie uma{" "}
-            <span className="text-foreground/95 font-medium">renda real</span> através das vendas.
-          </p>
-          <p className="text-base sm:text-lg text-foreground/75 leading-relaxed">
-            Adoce sua festa com{" "}
-            <span className="text-foreground/95 font-medium">produtos exclusivos</span>
-            , sabor marcante e apresentação diferenciada.
-          </p>
-          <p className="text-sm sm:text-base text-foreground/60 leading-relaxed">
-            Leve criatividade, inovação e lucratividade para seu negócio.
-            Atendemos encomendas e entregas em toda a{" "}
-            <span className="text-primary font-medium">Paraíba e Pernambuco</span>.
+          <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-light">
+            Aprenda vendas, comunicação e mentalidade para evoluir financeiramente e se tornar diferenciado da maioria.
           </p>
         </motion.div>
 
@@ -125,49 +91,24 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14"
+          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
           <a
-            href="#encomendas"
-            id="hero-cta-encomendar"
-            className="btn-gold group"
+            href="#produtos"
+            className="btn-gold group text-lg py-4 px-8 w-full sm:w-auto"
           >
-            <ShoppingBag className="w-4 h-4" />
-            Fazer Minha Encomenda
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <Rocket className="w-5 h-5" />
+            QUERO EVOLUIR
           </a>
           <a
             href="#mentoria"
-            id="hero-cta-aprender-vender"
-            className="btn-outline group flex items-center gap-2"
+            className="btn-outline group flex items-center gap-2 text-lg py-4 px-8 w-full sm:w-auto border-white/20 text-white hover:border-white/50 hover:bg-white/5"
           >
-            <CircleDollarSign className="w-4 h-4 text-gold-soft group-hover:text-gold transition-colors" />
-            Aprender a Vender
+            ENTRAR NA MENTORIA
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
 
-        {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.65 }}
-          className="flex flex-wrap items-center justify-center gap-6 sm:gap-10"
-        >
-          {[
-            { value: "+400", label: "Clientes Atendidos" },
-            { value: "+1.000", label: "Produtos Vendidos" },
-            { value: "+30", label: "Eventos Realizados" },
-          ].map((stat, i) => (
-            <div key={i} className="text-center">
-              <div className="font-display text-2xl sm:text-3xl font-bold text-gradient-gold">
-                {stat.value}
-              </div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider mt-0.5">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}
@@ -177,10 +118,10 @@ export function Hero() {
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
       >
-        <span className="text-xs text-muted-foreground uppercase tracking-[0.25em]">
+        <span className="text-xs text-white/50 uppercase tracking-[0.25em]">
           Rolar
         </span>
-        <ChevronDown className="w-4 h-4 text-primary animate-bounce-slow" />
+        <ChevronDown className="w-4 h-4 text-gold animate-bounce-slow" />
       </motion.div>
 
       {/* Bottom fade */}
