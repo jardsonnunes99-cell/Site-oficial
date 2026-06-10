@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { TrendingUp, ShieldCheck } from "lucide-react";
+import imgFilosofia from "@/assets/filosofia.jpg";
 
 export const About = () => {
   return (
@@ -53,7 +54,8 @@ export const About = () => {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="aspect-square rounded-2xl overflow-hidden glass-premium border-gold relative z-10 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1600')] bg-cover bg-center">
+            <div className="aspect-square rounded-2xl overflow-hidden glass-premium border-gold relative z-10">
+              <img src={imgFilosofia} alt="Roliude Nordestina" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/40"></div>
             </div>
             
