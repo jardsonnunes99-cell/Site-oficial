@@ -33,7 +33,7 @@ export const Products = () => {
                 <BookOpen className="w-7 h-7 text-white/70" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Ebook</h3>
-              <p className="text-xl font-medium text-gold mb-4">"5 Receitas Lucrativas"</p>
+              <p className="text-xl font-medium text-gold mb-4">"6 Receitas Lucrativas"</p>
               <p className="text-muted-foreground mb-4">
                 Receitas simples e lucrativas para começar vendas rapidamente. O primeiro passo para sair do zero.
               </p>
@@ -44,7 +44,7 @@ export const Products = () => {
               </ul>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-6">R$ 29<span className="text-lg text-muted-foreground">,90</span></p>
+              <p className="text-3xl font-bold mb-6">R$ 19<span className="text-lg text-muted-foreground">,90</span></p>
               <button className="w-full btn-outline">
                 COMPRAR AGORA
               </button>
@@ -66,7 +66,7 @@ export const Products = () => {
               <div className="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center mb-6 border border-gold/30">
                 <Crown className="w-8 h-8 text-gold" />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Mentoria</h3>
+              <h3 className="text-2xl font-bold mb-2">Mentoria Completa</h3>
               <p className="text-xl font-medium text-gold mb-4">"1% Diferenciado"</p>
               
               <ul className="text-foreground/90 mb-6 space-y-2 text-sm">
@@ -79,10 +79,16 @@ export const Products = () => {
                 <li className="flex items-start gap-2">
                   <span className="text-gold">✦</span> 1 planilha financeira bônus
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-gold">✦</span> Acompanhamento direto comigo
+                <li className="flex items-start gap-2 text-gold font-medium">
+                  <span className="text-gold">✦</span> Acompanhamento até recuperar o valor investido
                 </li>
               </ul>
+
+              <div className="bg-gold/10 border border-gold/30 rounded-lg p-3 mb-4 text-center">
+                <p className="text-sm text-gold">
+                  <strong>Se já sabe vender</strong>, aumente até 70% as vendas adquirindo a mentoria completa.
+                </p>
+              </div>
 
               <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 mb-8">
                 <p className="text-xs text-red-400 font-bold uppercase tracking-wider mb-1">⚠️ Aviso Importante</p>
@@ -92,7 +98,7 @@ export const Products = () => {
               </div>
             </div>
             <div>
-              <p className="text-4xl font-bold mb-6 text-gradient-gold">R$ 997<span className="text-xl text-gold/70">,00</span></p>
+              <p className="text-4xl font-bold mb-6 text-gradient-gold">R$ 497<span className="text-xl text-gold/70">,90</span></p>
               <button className="w-full btn-gold py-4 text-lg">
                 ENTRAR NA MENTORIA
               </button>
@@ -112,7 +118,7 @@ export const Products = () => {
                 <Rocket className="w-7 h-7 text-white/70" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Treinamento</h3>
-              <p className="text-xl font-medium text-gold mb-4">"6 Estratégias de Venda"</p>
+              <p className="text-xl font-medium text-gold mb-4">"6 Estratégias + Mini Mentoria"</p>
               <p className="text-muted-foreground mb-4">
                 Estratégias reais para aumentar conversão e vender mais nas ruas. Técnicas validadas em campo.
               </p>
@@ -123,7 +129,7 @@ export const Products = () => {
               </ul>
             </div>
             <div>
-              <p className="text-3xl font-bold mb-6">R$ 197<span className="text-lg text-muted-foreground">,00</span></p>
+              <p className="text-3xl font-bold mb-6">R$ 197<span className="text-lg text-muted-foreground">,90</span></p>
               <button className="w-full btn-outline">
                 ACESSAR TREINAMENTO
               </button>
