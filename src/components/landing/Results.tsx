@@ -1,19 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import gBrigadeiros from "@/assets/gallery-brigadeiros.jpg"; // Keep imports to avoid breaking build, use as placeholders
-import gMesa from "@/assets/gallery-mesa-evento.jpg";
-import gPix from "@/assets/gallery-pix-proof.jpg";
+import gBrigadeiros from "@/assets/gallery-brigadeiros.jpg"; 
+import gDisciplina from "@/assets/disciplina.jpg";
+import gLucro from "@/assets/lucro.jpg";
 
 const images = [
   { src: gBrigadeiros, label: "Resultados Reais", tag: "Evolução" },
-  { src: gMesa, label: "Mentalidade Forte", tag: "Disciplina" },
-  { src: gPix, label: "Vendas na Prática", tag: "Lucro" },
-];
-
-const stats = [
-  { value: 5000, suffix: "+", label: "Alunos" },
-  { value: 20000, suffix: "+", label: "Vendas Realizadas" },
-  { value: 100000, suffix: "+", label: "Pessoas Impactadas" },
+  { src: gDisciplina, label: "Mentalidade Forte", tag: "Disciplina" },
+  { src: gLucro, label: "Vendas na Prática", tag: "Lucro" },
 ];
 
 function Counter({ to, suffix }: { to: number; suffix: string }) {
@@ -75,26 +69,7 @@ export function Results() {
           </p>
         </motion.div>
 
-        {/* Counters */}
-        <div className="grid sm:grid-cols-3 gap-4 mb-16">
-          {stats.map((s, i) => (
-            <motion.div
-              key={s.label}
-              initial={{ opacity: 0, scale: 0.85, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="glass-premium rounded-2xl p-8 text-center hover-lift border-gold/20"
-            >
-              <div className="font-display text-4xl sm:text-5xl font-bold text-gradient-gold mb-2">
-                <Counter to={s.value} suffix={s.suffix} />
-              </div>
-              <div className="text-xs uppercase tracking-widest text-white/50">
-                {s.label}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {/* Removed Counters as requested by user */}
 
         {/* Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">

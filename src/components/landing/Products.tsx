@@ -34,9 +34,14 @@ export const Products = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2">Ebook</h3>
               <p className="text-xl font-medium text-gold mb-4">"5 Receitas Lucrativas"</p>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-muted-foreground mb-4">
                 Receitas simples e lucrativas para começar vendas rapidamente. O primeiro passo para sair do zero.
               </p>
+              <ul className="text-foreground/90 mb-8 space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> +1 Estratégia de Venda Bônus
+                </li>
+              </ul>
             </div>
             <div>
               <p className="text-3xl font-bold mb-6">R$ 29<span className="text-lg text-muted-foreground">,90</span></p>
@@ -107,10 +112,15 @@ export const Products = () => {
                 <Rocket className="w-7 h-7 text-white/70" />
               </div>
               <h3 className="text-2xl font-bold mb-2">Treinamento</h3>
-              <p className="text-xl font-medium text-gold mb-4">"5 Estratégias de Venda"</p>
-              <p className="text-muted-foreground mb-8">
+              <p className="text-xl font-medium text-gold mb-4">"6 Estratégias de Venda"</p>
+              <p className="text-muted-foreground mb-4">
                 Estratégias reais para aumentar conversão e vender mais nas ruas. Técnicas validadas em campo.
               </p>
+              <ul className="text-foreground/90 mb-8 space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-gold">✦</span> +5 Receitas Lucrativas Bônus
+                </li>
+              </ul>
             </div>
             <div>
               <p className="text-3xl font-bold mb-6">R$ 197<span className="text-lg text-muted-foreground">,00</span></p>
