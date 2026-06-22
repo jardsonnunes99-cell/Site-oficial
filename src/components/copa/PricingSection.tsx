@@ -57,18 +57,18 @@ export function PricingSection() {
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
-                <span>Comprar 670 figurinhas em pacotinhos (R$ 4,00 por 5 cromos)</span>
+                <span>Comprar 670 figurinhas em pacotinhos (R$ 7,00 cada)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
                 <span>
-                  Gastaria no <strong>mínimo R$ 536,00</strong> (sem tirar repetidas)
+                  Gastaria no <strong>mínimo R$ 938,00</strong> (sem tirar repetidas)
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
                 <span>
-                  Na prática, com as repetidas, o custo ultrapassa <strong>R$ 1.500,00!</strong>
+                  Na prática, com as repetidas, o custo ultrapassa <strong>R$ 3.000,00!</strong>
                 </span>
               </li>
             </ul>
@@ -99,7 +99,7 @@ export function PricingSection() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#00A651] mt-1">✓</span>
-                <span>Economia de mais de R$ 1.490,00 na sua coleção!</span>
+                <span>Economia de quase R$ 3.000,00 na sua coleção!</span>
               </li>
             </ul>
           </motion.div>
@@ -120,6 +120,12 @@ export function PricingSection() {
           </div>
 
           <div className="relative z-10 text-center pt-4">
+            {/* Urgency Alert */}
+            <div className="mb-6 inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-2 rounded-full text-sm font-bold">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />O preço vai subir
+              para R$ 29,90 em breve!
+            </div>
+
             {/* Price */}
             <div className="mb-8">
               <div className="flex items-center justify-center gap-3 mb-2">

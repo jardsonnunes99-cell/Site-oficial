@@ -9,9 +9,12 @@ import { GuaranteeSection } from "@/components/copa/GuaranteeSection";
 import { FinalCTA } from "@/components/copa/FinalCTA";
 import { FooterCopa } from "@/components/copa/FooterCopa";
 
+import { StickyTimer } from "@/components/copa/StickyTimer";
+
 export default function App() {
   return (
-    <main className="relative min-h-screen bg-[#111111] text-white overflow-x-hidden">
+    <main className="relative min-h-screen bg-[#111111] text-white overflow-x-hidden pt-16 sm:pt-20">
+      <StickyTimer />
       <HeroSection />
       <PainSection />
       <SolutionSection />
