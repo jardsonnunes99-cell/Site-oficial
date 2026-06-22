@@ -52,8 +52,7 @@ export function FAQ() {
             <span className="w-4 h-px bg-primary inline-block" />
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold">
-            Suas dúvidas,{" "}
-            <span className="text-gradient-gold">respondidas</span>.
+            Suas dúvidas, <span className="text-gradient-gold">respondidas</span>.
           </h2>
         </motion.div>
 
@@ -86,16 +85,12 @@ export function FAQ() {
                   </span>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
-                      isOpen
-                        ? "bg-gold-gradient shadow-gold-sm"
-                        : "glass border-gold"
+                      isOpen ? "bg-gold-gradient shadow-gold-sm" : "glass border-gold"
                     }`}
                   >
                     <Plus
                       className={`w-4 h-4 transition-all duration-400 ${
-                        isOpen
-                          ? "rotate-45 text-primary-foreground"
-                          : "text-primary"
+                        isOpen ? "rotate-45 text-primary-foreground" : "text-primary"
                       }`}
                     />
                   </div>
@@ -103,15 +98,11 @@ export function FAQ() {
 
                 <div
                   className={`grid transition-all duration-500 ease-out ${
-                    isOpen
-                      ? "grid-rows-[1fr] opacity-100"
-                      : "grid-rows-[0fr] opacity-0"
+                    isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 sm:px-6 pb-6 text-muted-foreground leading-relaxed">
-                      {f.a}
-                    </p>
+                    <p className="px-5 sm:px-6 pb-6 text-muted-foreground leading-relaxed">{f.a}</p>
                   </div>
                 </div>
               </motion.div>

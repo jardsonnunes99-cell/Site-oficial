@@ -78,7 +78,7 @@ export function Testimonials() {
       setDir(next > active ? 1 : -1);
       setActive((next + testimonials.length) % testimonials.length);
     },
-    [active]
+    [active],
   );
 
   const prev = () => go(active - 1);
@@ -133,8 +133,7 @@ export function Testimonials() {
             <span className="w-4 h-px bg-primary inline-block" />
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold">
-            Quem viveu,{" "}
-            <span className="text-gradient-gold">recomenda</span>.
+            Quem viveu, <span className="text-gradient-gold">recomenda</span>.
           </h2>
         </motion.div>
 
@@ -169,9 +168,7 @@ export function Testimonials() {
 
               {/* Highlight badge */}
               <div className="mb-8">
-                <span className="badge-premium">
-                  ✓ {t.highlight}
-                </span>
+                <span className="badge-premium">✓ {t.highlight}</span>
               </div>
 
               {/* Author */}

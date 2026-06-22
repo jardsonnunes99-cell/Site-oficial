@@ -34,10 +34,76 @@ export function PricingSection() {
             OFERTA ESPECIAL
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
-            Aproveite o{" "}
-            <span className="text-gradient-green">melhor preço</span>
+            Aproveite o <span className="text-gradient-green">melhor preço</span>
           </h2>
         </motion.div>
+
+        {/* Cost Comparison Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#1a1111] to-[#140b0b] border border-[rgba(255,50,50,0.15)] relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-4 opacity-10">
+              <span className="text-6xl">💸</span>
+            </div>
+            <h3 className="text-xl font-bold text-red-400 mb-4 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+              Maneira Tradicional
+            </h3>
+            <ul className="space-y-4 text-gray-400 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-red-500 mt-1">✗</span>
+                <span>Comprar 670 figurinhas em pacotinhos (R$ 4,00 por 5 cromos)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-500 mt-1">✗</span>
+                <span>
+                  Gastaria no <strong>mínimo R$ 536,00</strong> (sem tirar repetidas)
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-500 mt-1">✗</span>
+                <span>
+                  Na prática, com as repetidas, o custo ultrapassa <strong>R$ 1.500,00!</strong>
+                </span>
+              </li>
+            </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#0b1a11] to-[#08140b] border border-[rgba(0,166,81,0.3)] relative overflow-hidden shadow-[0_0_30px_rgba(0,166,81,0.1)]"
+          >
+            <div className="absolute top-0 right-0 p-4 opacity-10">
+              <span className="text-6xl">✨</span>
+            </div>
+            <h3 className="text-xl font-bold text-[#00A651] mb-4 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-[#00A651] animate-pulse" />O Jeito
+              Inteligente
+            </h3>
+            <ul className="space-y-4 text-gray-300 text-sm">
+              <li className="flex items-start gap-2">
+                <span className="text-[#00A651] mt-1">✓</span>
+                <span>Pack Digital completo e organizado</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00A651] mt-1">✓</span>
+                <span>Gasto único: Imprima quantas vezes precisar</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-[#00A651] mt-1">✓</span>
+                <span>Economia de mais de R$ 1.490,00 na sua coleção!</span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
 
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -57,9 +123,7 @@ export function PricingSection() {
             {/* Price */}
             <div className="mb-8">
               <div className="flex items-center justify-center gap-3 mb-2">
-                <span className="text-lg text-gray-500 line-through">
-                  R$ 29,90
-                </span>
+                <span className="text-lg text-gray-500 line-through">R$ 29,90</span>
                 <span className="px-3 py-1 rounded-full bg-[rgba(0,166,81,0.15)] border border-[rgba(0,166,81,0.3)] text-[#00A651] text-xs font-bold">
                   -67% OFF
                 </span>
@@ -73,9 +137,7 @@ export function PricingSection() {
                 <span className="text-3xl font-bold text-[#00A651]">,90</span>
               </div>
 
-              <p className="text-gray-500 text-sm mt-3">
-                Pagamento único · Acesso vitalício
-              </p>
+              <p className="text-gray-500 text-sm mt-3">Pagamento único · Acesso vitalício</p>
             </div>
 
             {/* Divider */}
@@ -95,9 +157,7 @@ export function PricingSection() {
                   <div className="w-5 h-5 rounded-full bg-[rgba(0,166,81,0.15)] border border-[rgba(0,166,81,0.3)] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Check className="w-3 h-3 text-[#00A651]" />
                   </div>
-                  <span className="text-gray-300 text-sm font-medium">
-                    {item}
-                  </span>
+                  <span className="text-gray-300 text-sm font-medium">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -114,8 +174,7 @@ export function PricingSection() {
                 Compra segura
               </span>
               <span className="flex items-center gap-1.5">
-                <Gift className="w-3.5 h-3.5 text-[#D4A517]" />
-                + 3 bônus grátis
+                <Gift className="w-3.5 h-3.5 text-[#D4A517]" />+ 3 bônus grátis
               </span>
             </div>
           </div>

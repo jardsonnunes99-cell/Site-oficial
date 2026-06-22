@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { ArrowRight, ChevronDown, Rocket } from "lucide-react";
 
 // Placeholder video (Business/Urban motion)
-const YOUTUBE_VIDEO_ID = "hVvEISFw9w0"; 
+const YOUTUBE_VIDEO_ID = "hVvEISFw9w0";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -82,7 +82,8 @@ export function Hero() {
           className="max-w-2xl mx-auto mb-12"
         >
           <p className="text-lg sm:text-xl text-white/80 leading-relaxed font-light">
-            Aprenda vendas, comunicação e mentalidade para evoluir financeiramente e se tornar diferenciado da maioria.
+            Aprenda vendas, comunicação e mentalidade para evoluir financeiramente e se tornar
+            diferenciado da maioria.
           </p>
         </motion.div>
 
@@ -93,10 +94,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
-          <a
-            href="#produtos"
-            className="btn-gold group text-lg py-4 px-8 w-full sm:w-auto"
-          >
+          <a href="#produtos" className="btn-gold group text-lg py-4 px-8 w-full sm:w-auto">
             <Rocket className="w-5 h-5" />
             QUERO EVOLUIR
           </a>
@@ -108,7 +106,6 @@ export function Hero() {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
-
       </motion.div>
 
       {/* Scroll indicator */}
@@ -118,9 +115,7 @@ export function Hero() {
         transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2"
       >
-        <span className="text-xs text-white/50 uppercase tracking-[0.25em]">
-          Rolar
-        </span>
+        <span className="text-xs text-white/50 uppercase tracking-[0.25em]">Rolar</span>
         <ChevronDown className="w-4 h-4 text-gold animate-bounce-slow" />
       </motion.div>
 

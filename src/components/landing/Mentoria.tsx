@@ -3,12 +3,36 @@ import { ArrowRight, Zap, Users, BookOpen, TrendingUp, Shield, Star } from "luci
 import { toast } from "sonner";
 
 const topics = [
-  { icon: Zap, title: "Vender nas ruas", desc: "Técnica, postura e abordagem para vender em qualquer lugar" },
-  { icon: Users, title: "Perder a timidez", desc: "Comunicação com confiança e presença que converte" },
-  { icon: BookOpen, title: "Criar produtos", desc: "Do zero ao produto lucrativo com identidade única" },
-  { icon: TrendingUp, title: "Lucrar de verdade", desc: "Precificação, margem e escala para uma renda real" },
-  { icon: Shield, title: "Postura de vendedor", desc: "Construa autoridade e seja lembrado pelos clientes" },
-  { icon: Star, title: "Método validado", desc: "Aprenda com quem já fez e continua fazendo todo dia" },
+  {
+    icon: Zap,
+    title: "Vender nas ruas",
+    desc: "Técnica, postura e abordagem para vender em qualquer lugar",
+  },
+  {
+    icon: Users,
+    title: "Perder a timidez",
+    desc: "Comunicação com confiança e presença que converte",
+  },
+  {
+    icon: BookOpen,
+    title: "Criar produtos",
+    desc: "Do zero ao produto lucrativo com identidade única",
+  },
+  {
+    icon: TrendingUp,
+    title: "Lucrar de verdade",
+    desc: "Precificação, margem e escala para uma renda real",
+  },
+  {
+    icon: Shield,
+    title: "Postura de vendedor",
+    desc: "Construa autoridade e seja lembrado pelos clientes",
+  },
+  {
+    icon: Star,
+    title: "Método validado",
+    desc: "Aprenda com quem já fez e continua fazendo todo dia",
+  },
 ];
 
 export function Mentoria() {
@@ -35,15 +59,16 @@ export function Mentoria() {
           </p>
 
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Aprenda a{" "}
-            <span className="text-gradient-gold">lucrar nas ruas</span>{" "}
-            do jeito certo.
+            Aprenda a <span className="text-gradient-gold">lucrar nas ruas</span> do jeito certo.
           </h2>
 
           <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
-            Não importa se você nunca vendeu nada. Com o método certo, qualquer pessoa
-            consegue perder o medo, criar produtos que vendem e{" "}
-            <span className="text-foreground font-medium">construir uma renda real e consistente</span> — mesmo começando do zero.
+            Não importa se você nunca vendeu nada. Com o método certo, qualquer pessoa consegue
+            perder o medo, criar produtos que vendem e{" "}
+            <span className="text-foreground font-medium">
+              construir uma renda real e consistente
+            </span>{" "}
+            — mesmo começando do zero.
           </p>
         </motion.div>
 

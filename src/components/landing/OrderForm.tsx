@@ -6,7 +6,7 @@ export function OrderForm() {
     <section id="cta" className="relative py-32 px-6 overflow-hidden">
       {/* Background with premium gradient */}
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,oklch(0.05_0_0),oklch(0.15_0_0))] z-0" />
-      
+
       {/* Glow effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full max-h-[400px] bg-gold/10 blur-[120px] rounded-full pointer-events-none z-0" />
 
@@ -19,10 +19,10 @@ export function OrderForm() {
           className="glass-premium border-gold-glow rounded-[2.5rem] p-12 sm:p-20 shadow-gold"
         >
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white leading-tight">
-            A decisão de evoluir <br/>
+            A decisão de evoluir <br />
             <span className="text-gradient-gold">começa agora.</span>
           </h2>
-          
+
           <p className="text-xl sm:text-2xl text-white/80 mb-12 font-light">
             Entre para o 1% Diferenciado.
           </p>

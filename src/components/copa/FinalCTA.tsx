@@ -16,12 +16,10 @@ export function FinalCTA() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6">
-            Não perca essa{" "}
-            <span className="text-gradient-green">oportunidade!</span>
+            Não perca essa <span className="text-gradient-green">oportunidade!</span>
           </h2>
           <p className="text-gray-400 text-lg sm:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-            Complete sua coleção da Copa do Mundo agora mesmo. Acesso imediato
-            após a compra.
+            Complete sua coleção da Copa do Mundo agora mesmo. Acesso imediato após a compra.
           </p>
         </motion.div>
 
@@ -33,24 +31,17 @@ export function FinalCTA() {
           className="flex flex-col items-center gap-6"
         >
           {/* Animated arrow */}
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          >
+          <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
             <ArrowDown className="w-8 h-8 text-[#00A651]" />
           </motion.div>
 
-          <a
-            href="#"
-            className="btn-cta text-lg sm:text-xl px-12 sm:px-20 py-5 sm:py-6"
-          >
+          <a href="#" className="btn-cta text-lg sm:text-xl px-12 sm:px-20 py-5 sm:py-6">
             🏆 QUERO BAIXAR AGORA
           </a>
 
           <p className="text-gray-500 text-sm">
-            Por apenas{" "}
-            <span className="text-[#00A651] font-bold">R$ 9,90</span>{" "}
-            · Acesso vitalício · Garantia de 7 dias
+            Por apenas <span className="text-[#00A651] font-bold">R$ 9,90</span> · Acesso vitalício
+            · Garantia de 7 dias
           </p>
 
           {/* Pulse ring effect around button */}

@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import gBrigadeiros from "@/assets/gallery-brigadeiros.jpg"; 
+import gBrigadeiros from "@/assets/gallery-brigadeiros.jpg";
 import gDisciplina from "@/assets/disciplina.jpg";
 import gLucro from "@/assets/lucro.jpg";
 
@@ -40,7 +40,10 @@ function Counter({ to, suffix }: { to: number; suffix: string }) {
 
 export function Results() {
   return (
-    <section id="resultados" className="relative py-32 px-6 section-divider overflow-hidden bg-black">
+    <section
+      id="resultados"
+      className="relative py-32 px-6 section-divider overflow-hidden bg-black"
+    >
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-gold/5 blur-[180px]" />
@@ -95,16 +98,12 @@ export function Results() {
 
               {/* Tag */}
               <div className="absolute top-3 left-3">
-                <span className="badge-premium text-[9px] py-1 px-3">
-                  {img.tag}
-                </span>
+                <span className="badge-premium text-[9px] py-1 px-3">{img.tag}</span>
               </div>
 
               {/* Label */}
               <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold text-white">
-                  {img.label}
-                </p>
+                <p className="text-sm font-semibold text-white">{img.label}</p>
                 <div className="mt-2 w-8 h-0.5 bg-gold-gradient rounded-full" />
               </div>
             </motion.div>

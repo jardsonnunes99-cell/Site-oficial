@@ -16,8 +16,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
-        title:
-          "Diferenciado — Produtos Artesanais Premium | Mentoria de Vendas e Revenda",
+        title: "Diferenciado — Produtos Artesanais Premium | Mentoria de Vendas e Revenda",
       },
       {
         name: "description",

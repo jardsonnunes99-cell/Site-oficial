@@ -42,9 +42,7 @@ export function BonusSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag-green mb-6 inline-flex">
-            🎁 BÔNUS EXCLUSIVOS
-          </span>
+          <span className="section-tag-green mb-6 inline-flex">🎁 BÔNUS EXCLUSIVOS</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
             E tem <span className="text-gradient-green">mais!</span>
           </h2>
@@ -97,13 +95,9 @@ export function BonusSection() {
                   {bonus.title}
                 </span>
 
-                <h3 className="text-xl font-bold text-white mt-2 mb-3">
-                  {bonus.subtitle}
-                </h3>
+                <h3 className="text-xl font-bold text-white mt-2 mb-3">{bonus.subtitle}</h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {bonus.description}
-                </p>
+                <p className="text-gray-400 text-sm leading-relaxed">{bonus.description}</p>
               </div>
             </motion.div>
           ))}

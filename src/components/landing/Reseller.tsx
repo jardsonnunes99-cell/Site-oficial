@@ -48,14 +48,12 @@ export function Reseller() {
 
           {/* Headline */}
           <h2 className="font-display text-4xl sm:text-5xl font-bold text-center mb-4">
-            Torne-se um{" "}
-            <span className="text-gradient-gold">Parceiro Diferenciado</span>.
+            Torne-se um <span className="text-gradient-gold">Parceiro Diferenciado</span>.
           </h2>
 
           <p className="text-muted-foreground text-center max-w-xl mx-auto mb-10 leading-relaxed">
-            Tenha acesso aos nossos produtos com preço exclusivo de revenda,
-            suporte direto e a estrutura completa para construir sua própria
-            renda em toda a Paraíba e Pernambuco.
+            Tenha acesso aos nossos produtos com preço exclusivo de revenda, suporte direto e a
+            estrutura completa para construir sua própria renda em toda a Paraíba e Pernambuco.
           </p>
 
           {/* Highlights row */}
@@ -95,17 +93,17 @@ export function Reseller() {
           {/* CTA */}
           <div className="flex justify-center">
             <a
-            href={waLink(
-              "Olá! Quero aprender a vender os produtos Diferenciado como revendedor. Pode me passar mais informações?"
-            )}
-            target="_blank"
-            rel="noreferrer"
-            id="btn-aprender-vender"
-            className="btn-gold group"
-          >
-            Quero Aprender a Vender
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+              href={waLink(
+                "Olá! Quero aprender a vender os produtos Diferenciado como revendedor. Pode me passar mais informações?",
+              )}
+              target="_blank"
+              rel="noreferrer"
+              id="btn-aprender-vender"
+              className="btn-gold group"
+            >
+              Quero Aprender a Vender
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
 
           {/* Bottom accent line */}

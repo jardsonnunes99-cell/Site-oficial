@@ -12,7 +12,7 @@ const socials = [
     href: "https://tiktok.com",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.78a4.85 4.85 0 01-1.01-.09z"/>
+        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.78a4.85 4.85 0 01-1.01-.09z" />
       </svg>
     ),
   },
@@ -27,14 +27,14 @@ export function Footer() {
   return (
     <footer className="relative border-t border-white/5 bg-black py-12">
       <div className="mx-auto max-w-7xl px-6 relative z-10 flex flex-col items-center">
-        
         {/* Logo/Brand */}
         <div className="flex flex-col items-center gap-4 mb-8">
           <span className="font-display text-3xl font-bold text-white tracking-tight">
             1% <span className="text-gradient-gold">Diferenciado</span>
           </span>
           <p className="text-white/50 text-sm max-w-md text-center">
-            Desenvolvendo comunicação, vendas e mentalidade para aqueles que se recusam a ser comuns.
+            Desenvolvendo comunicação, vendas e mentalidade para aqueles que se recusam a ser
+            comuns.
           </p>
         </div>
 

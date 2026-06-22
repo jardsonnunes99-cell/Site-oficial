@@ -34,13 +34,12 @@ export function GuaranteeSection() {
           {/* Text */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-4">
-              <span className="text-gradient-gold">7 dias</span> de garantia
-              incondicional
+              <span className="text-gradient-gold">7 dias</span> de garantia incondicional
             </h2>
             <p className="text-gray-400 text-base sm:text-lg leading-relaxed mb-2">
               Se por qualquer motivo você não gostar do material,{" "}
-              <strong className="text-white">devolvemos 100% do seu dinheiro</strong>.
-              Sem perguntas, sem burocracia.
+              <strong className="text-white">devolvemos 100% do seu dinheiro</strong>. Sem
+              perguntas, sem burocracia.
             </p>
             <p className="text-gray-500 text-sm">
               Risco zero para você. Toda a confiança do nosso lado.

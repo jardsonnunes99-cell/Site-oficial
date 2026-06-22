@@ -4,14 +4,14 @@ const quotes = [
   "A maioria assiste. O 1% executa.",
   "Comunicação gera oportunidade.",
   "Quem vende bem, vive diferente.",
-  "Seu resultado muda quando sua mentalidade muda."
+  "Seu resultado muda quando sua mentalidade muda.",
 ];
 
 export const Quotes = () => {
   return (
     <section className="py-24 px-4 bg-background border-y border-white/5 relative overflow-hidden">
       <div className="absolute inset-0 bg-gold-gradient-subtle opacity-30"></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10 flex flex-col items-center gap-16">
         {quotes.map((quote, index) => (
           <motion.div

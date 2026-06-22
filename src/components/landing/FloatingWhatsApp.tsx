@@ -16,7 +16,17 @@ export function FloatingWhatsApp() {
     >
       {/* Pulse rings */}
       <span className="pulse" style={{ animationDelay: "0s" }} />
-      <span className="pulse" style={{ animationDelay: "0.8s", position: "absolute", inset: 0, borderRadius: "50%", background: "rgba(37, 211, 102, 0.30)", animation: "pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s infinite" }} />
+      <span
+        className="pulse"
+        style={{
+          animationDelay: "0.8s",
+          position: "absolute",
+          inset: 0,
+          borderRadius: "50%",
+          background: "rgba(37, 211, 102, 0.30)",
+          animation: "pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s infinite",
+        }}
+      />
 
       {/* WhatsApp SVG icon */}
       <svg

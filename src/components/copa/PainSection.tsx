@@ -33,12 +33,9 @@ export function PainSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag mb-6 inline-flex">
-            ⚠️ ATENÇÃO
-          </span>
+          <span className="section-tag mb-6 inline-flex">⚠️ ATENÇÃO</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
-            Cansado de procurar{" "}
-            <span className="text-gradient-gold">figurinhas difíceis?</span>
+            Cansado de procurar <span className="text-gradient-gold">figurinhas difíceis?</span>
           </h2>
         </motion.div>
 
@@ -59,14 +56,9 @@ export function PainSection() {
                   border: `1px solid ${pain.color}30`,
                 }}
               >
-                <pain.icon
-                  className="w-7 h-7"
-                  style={{ color: pain.color }}
-                />
+                <pain.icon className="w-7 h-7" style={{ color: pain.color }} />
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed font-medium">
-                {pain.text}
-              </p>
+              <p className="text-lg text-gray-300 leading-relaxed font-medium">{pain.text}</p>
             </motion.div>
           ))}
         </div>

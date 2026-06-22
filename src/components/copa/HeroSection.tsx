@@ -58,9 +58,8 @@ export function HeroSection() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] mb-6"
           >
-            Complete sua coleção{" "}
-            <span className="text-gradient-gold">sem gastar fortunas</span>{" "}
-            em bancas e pacotes aleatórios.
+            Complete sua coleção <span className="text-gradient-gold">sem gastar fortunas</span> em
+            bancas e pacotes aleatórios.
           </motion.h1>
 
           <motion.p
@@ -69,8 +68,8 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg sm:text-xl text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed"
           >
-            Receba agora um pack digital com centenas de figurinhas organizadas
-            e prontas para impressão.
+            Receba agora um pack digital com centenas de figurinhas organizadas e prontas para
+            impressão.
           </motion.p>
 
           <motion.div
@@ -91,15 +90,33 @@ export function HeroSection() {
             className="flex items-center gap-6 mt-8 justify-center lg:justify-start text-sm text-gray-500"
           >
             <span className="flex items-center gap-2">
-              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
               Download imediato
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
               Alta qualidade
             </span>
             <span className="flex items-center gap-2">
-              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+              <svg className="w-4 h-4 text-[#00A651]" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
               Acesso vitalício
             </span>
           </motion.div>
@@ -118,9 +135,9 @@ export function HeroSection() {
             <div className="absolute -inset-8 bg-[radial-gradient(circle,rgba(212,165,23,0.1)_0%,transparent_70%)] blur-2xl" />
 
             <motion.img
-              src="/images/hero-mockup.png"
+              src="/images/hero-image.jpg"
               alt="Pack Digital Figurinhas Copa do Mundo"
-              className="relative z-10 w-full rounded-2xl"
+              className="relative z-10 w-full rounded-2xl shadow-2xl border border-[rgba(212,165,23,0.3)]"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             />

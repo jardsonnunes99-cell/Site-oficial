@@ -17,12 +17,9 @@ export function DemoSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag mb-6 inline-flex">
-            👁️ DEMONSTRAÇÃO
-          </span>
+          <span className="section-tag mb-6 inline-flex">👁️ DEMONSTRAÇÃO</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
-            Veja o que{" "}
-            <span className="text-gradient-gold">está dentro</span>
+            Veja o que <span className="text-gradient-gold">está dentro</span>
           </h2>
           <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto">
             Material completo, organizado e pronto para usar. Confira algumas páginas do pack:
@@ -41,7 +38,7 @@ export function DemoSection() {
 
           <div className="relative rounded-2xl overflow-hidden border border-[rgba(212,165,23,0.15)] shadow-gold">
             <img
-              src="/images/pages-preview.png"
+              src="/images/preview-image.jpg"
               alt="Preview das páginas do Pack de Figurinhas"
               className="w-full h-auto"
             />

@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
-import { MessageSquare, Users, TrendingUp, Brain, DollarSign, Target, Award, ShieldCheck } from "lucide-react";
+import {
+  MessageSquare,
+  Users,
+  TrendingUp,
+  Brain,
+  DollarSign,
+  Target,
+  Award,
+  ShieldCheck,
+} from "lucide-react";
 
 const pillars = [
   { icon: MessageSquare, title: "Comunicação Persuasiva", delay: 0.1 },
@@ -16,9 +25,9 @@ export const Learn = () => {
   return (
     <section className="py-24 px-4 bg-background relative overflow-hidden" id="aprender">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent/5 via-background to-background opacity-50"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

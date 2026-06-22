@@ -108,8 +108,7 @@ export function Benefits() {
             <span className="w-4 h-px bg-primary inline-block" />
           </p>
           <h2 className="font-display text-4xl sm:text-5xl font-bold mb-5">
-            O que torna o{" "}
-            <span className="text-gradient-gold">Diferenciado</span> único.
+            O que torna o <span className="text-gradient-gold">Diferenciado</span> único.
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
             Cada detalhe foi pensado para oferecer uma experiência completa — do produto ao negócio.
@@ -141,9 +140,7 @@ export function Benefits() {
               <h3 className="font-display text-base font-semibold mb-2 leading-snug text-foreground">
                 {item.title}
               </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.desc}
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
 
               {/* Bottom accent line */}
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/0 to-transparent group-hover:via-primary/50 transition-all duration-500 rounded-b-xl" />

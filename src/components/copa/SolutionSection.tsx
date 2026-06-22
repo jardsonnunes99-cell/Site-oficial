@@ -26,9 +26,7 @@ export function SolutionSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag-green mb-6 inline-flex">
-            ✅ A SOLUÇÃO
-          </span>
+          <span className="section-tag-green mb-6 inline-flex">✅ A SOLUÇÃO</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
             O que você <span className="text-gradient-green">recebe</span>
           </h2>
@@ -51,9 +49,7 @@ export function SolutionSection() {
                 <div className="w-14 h-14 rounded-xl mx-auto mb-4 flex items-center justify-center bg-[rgba(0,166,81,0.1)] border border-[rgba(0,166,81,0.2)] group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-6 h-6 text-[#00A651]" />
                 </div>
-                <p className="text-sm font-semibold text-gray-200 leading-snug">
-                  {benefit.text}
-                </p>
+                <p className="text-sm font-semibold text-gray-200 leading-snug">{benefit.text}</p>
               </div>
             </motion.div>
           ))}

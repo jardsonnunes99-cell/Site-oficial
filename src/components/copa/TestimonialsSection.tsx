@@ -36,12 +36,9 @@ export function TestimonialsSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="section-tag mb-6 inline-flex">
-            ⭐ DEPOIMENTOS
-          </span>
+          <span className="section-tag mb-6 inline-flex">⭐ DEPOIMENTOS</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mt-4">
-            O que nossos clientes{" "}
-            <span className="text-gradient-gold">dizem</span>
+            O que nossos clientes <span className="text-gradient-gold">dizem</span>
           </h2>
         </motion.div>
 
@@ -58,10 +55,7 @@ export function TestimonialsSection() {
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(t.stars)].map((_, j) => (
-                  <Star
-                    key={j}
-                    className="w-4 h-4 text-[#D4A517] fill-[#D4A517]"
-                  />
+                  <Star key={j} className="w-4 h-4 text-[#D4A517] fill-[#D4A517]" />
                 ))}
               </div>
 
