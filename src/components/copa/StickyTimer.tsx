@@ -4,7 +4,7 @@ import { Timer } from "lucide-react";
 
 export function StickyTimer() {
   // Start with 15 minutes (900 seconds)
-  const [timeLeft, setTimeLeft]] = useState(900);
+  const [timeLeft, setTimeLeft] = useState(900);
 
   useEffect(() => {
     const timer = setInterval(() => {
