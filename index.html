@@ -80,15 +80,6 @@
 
       // Send Server-Side PageView
       sendServerEvent('PageView');
-
-      // Monitor checkout link clicks
-      document.addEventListener('click', function(e) {
-        let target = e.target.closest('a');
-        if (target && target.href && target.href.includes('checkoutseguro.ru')) {
-          if (typeof fbq === 'function') fbq('track', 'InitiateCheckout');
-          sendServerEvent('InitiateCheckout');
-        }
-      });
     </script>
   </head>
   <body>
