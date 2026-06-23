@@ -169,7 +169,7 @@ export function PricingSection() {
             </div>
 
             {/* CTA */}
-            <a href="#" className="btn-cta w-full text-center block">
+            <a href="https://checkoutseguro.ru/checkout/cmqpw6w8r0k1w01pvhvly1mjo?offer=FO6HVJL" className="btn-cta w-full text-center block">
               🏆 QUERO MEU PACK AGORA — R$ 9,90
             </a>
 

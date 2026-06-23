@@ -78,7 +78,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
-            <a href="#oferta" className="btn-cta">
+            <a href="https://checkoutseguro.ru/checkout/cmqpw6w8r0k1w01pvhvly1mjo?offer=FO6HVJL" className="btn-cta">
               🏆 QUERO MEU PACK AGORA
             </a>
           </motion.div>

@@ -35,7 +35,7 @@ export function FinalCTA() {
             <ArrowDown className="w-8 h-8 text-[#00A651]" />
           </motion.div>
 
-          <a href="#" className="btn-cta text-lg sm:text-xl px-12 sm:px-20 py-5 sm:py-6">
+          <a href="https://checkoutseguro.ru/checkout/cmqpw6w8r0k1w01pvhvly1mjo?offer=FO6HVJL" className="btn-cta text-lg sm:text-xl px-12 sm:px-20 py-5 sm:py-6">
             🏆 QUERO BAIXAR AGORA
           </a>
 
