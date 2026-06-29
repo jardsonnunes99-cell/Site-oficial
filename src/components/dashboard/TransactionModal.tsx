@@ -37,21 +37,21 @@ export function TransactionModal({ type, onSave }: TransactionModalProps) {
       <DialogTrigger asChild>
         <Button 
           variant={isIncome ? 'default' : 'destructive'} 
-          className="w-full flex items-center gap-2 h-12 text-lg font-semibold rounded-xl"
+          className={`w-full flex items-center gap-3 h-14 text-lg font-bold rounded-2xl shadow-xl hover:-translate-y-1 transition-all duration-300 ${isIncome ? 'bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400' : 'bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400'}`}
         >
-          {isIncome ? <PlusCircle className="w-5 h-5" /> : <MinusCircle className="w-5 h-5" />}
+          {isIncome ? <PlusCircle className="w-6 h-6" /> : <MinusCircle className="w-6 h-6" />}
           {isIncome ? 'Adicionar Entrada' : 'Adicionar Despesa'}
         </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-[#1a1a1a] text-white border-zinc-800 rounded-2xl">
+      <DialogContent className="sm:max-w-[425px] bg-[#0a0a0a]/90 backdrop-blur-2xl text-white border-white/10 rounded-3xl shadow-2xl">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">
+          <DialogTitle className="text-3xl font-extrabold bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
             {isIncome ? 'Nova Entrada' : 'Nova Despesa'}
           </DialogTitle>
         </DialogHeader>
-        <div className="grid gap-4 py-4">
+        <div className="grid gap-6 py-6">
           <div className="grid gap-2">
-            <Label htmlFor="amount" className="text-zinc-400">Valor (R$)</Label>
+            <Label htmlFor="amount" className="text-zinc-400 font-semibold tracking-wide">Valor (R$)</Label>
             <Input
               id="amount"
               type="number"
@@ -59,33 +59,33 @@ export function TransactionModal({ type, onSave }: TransactionModalProps) {
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
               placeholder="Ex: 150.00"
-              className="bg-[#2a2a2a] border-zinc-700 text-white h-12 rounded-xl text-lg"
+              className="bg-white/5 border-white/10 text-white h-14 rounded-2xl text-xl font-medium focus-visible:ring-green-500/50 focus-visible:border-green-500/50"
             />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="description" className="text-zinc-400">Descrição</Label>
+            <Label htmlFor="description" className="text-zinc-400 font-semibold tracking-wide">Descrição</Label>
             <Input
               id="description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder={isIncome ? "Ex: Venda de produto" : "Ex: Anúncios"}
-              className="bg-[#2a2a2a] border-zinc-700 text-white h-12 rounded-xl text-lg"
+              className="bg-white/5 border-white/10 text-white h-14 rounded-2xl text-xl font-medium focus-visible:ring-green-500/50 focus-visible:border-green-500/50"
             />
           </div>
           <div className="grid gap-2">
-            <Label htmlFor="date" className="text-zinc-400">Data</Label>
+            <Label htmlFor="date" className="text-zinc-400 font-semibold tracking-wide">Data</Label>
             <Input
               id="date"
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              className="bg-[#2a2a2a] border-zinc-700 text-white h-12 rounded-xl text-lg"
+              className="bg-white/5 border-white/10 text-white h-14 rounded-2xl text-xl font-medium focus-visible:ring-green-500/50 focus-visible:border-green-500/50"
             />
           </div>
         </div>
         <Button 
           onClick={handleSave} 
-          className={`w-full h-12 text-lg font-bold rounded-xl ${isIncome ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'}`}
+          className={`w-full h-14 text-xl font-bold rounded-2xl shadow-lg transition-all duration-300 hover:scale-[1.02] ${isIncome ? 'bg-gradient-to-r from-green-600 to-green-500 hover:shadow-green-500/20' : 'bg-gradient-to-r from-red-600 to-red-500 hover:shadow-red-500/20'}`}
         >
           Salvar
         </Button>
